@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 1.6rem;
+  }
+  
+  img {
+    width: 100%;
+}
+
+.logo-wrapper {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.logo-wrapper .logo {
+    width: 20rem;
+}
