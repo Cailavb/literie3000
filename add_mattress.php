@@ -58,11 +58,11 @@ include("templates/header.php");
 
         <div class="form-group">
             <label for="inputBrand">Marque du matelas: </label>
-            <input type="text" name="name" id="inputBrand" value="<?= isset($name) ? $brand: "" ?>">
+            <input type="text" name="brand" id="inputBrand" value="<?= isset($brand) ? $brand: "" ?>">
             <?php
             if (isset($errors["brand"])){
                 ?>
-                <span class="info-error"><?= $errors["name"] ?>
+                <span class="info-error"><?= $errors["brand"] ?>
                 </span>
             <?php    
             }
@@ -85,7 +85,7 @@ include("templates/header.php");
 
         <div class="form-group">
         <label for="selectSize">Choisissez une dimension : </label>
-        <select name="difficulty" id="selectSize">
+        <select name="size" id="selectSize">
             <option value="90x190"<?= (isset($size)&& $size === "90x190") ? "selected": ""?>>90x190</option>
             <option value="140x190" <?= (isset($size)&& $size === "140x190") ? "selected": ""?>>140x190</option>
             <option value="160x200"<?= (isset($size)&& $size === "160x200") ? "selected": ""?>>160x200</option>
@@ -98,7 +98,7 @@ include("templates/header.php");
             <form action="" method=post>
                 <div class="form-group">
                     <label for="inputPrice">Prix du matelas :</label>
-                    <input type="text" name="price" id="inputPrice" value="<?= isset($price) ? $price : "" ?>">
+                    <input type="text" name="price" id="inputPrice" value="<?= isset($price) ? $price : "" ?> €">
                     <?php
                     if (isset($errors["price"])) {
                     ?>
