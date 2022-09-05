@@ -49,6 +49,18 @@ include("templates/header.php");
             <a href="add_mattress.php?">Ajouter un matelas</a>
         </button>
     </div>
+
+    <div class="buttonToDel">
+        <button>
+            <a href="delete_mattress.php?">Supprimer un matelas</a>
+        </button>
+    </div>
+
+    <div class="buttonToUp">
+        <button>
+            <a href="update_mattress.php?">Modifier un matelas</a>
+        </button>
+    </div>
     <?php
     include("templates/footer.php")
     ?>
