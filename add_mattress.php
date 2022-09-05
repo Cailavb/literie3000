@@ -96,6 +96,10 @@ include("templates/header.php");
             </div>
             <input type="submit" value="Ajouter le matelas" class="btn-literie3000">
 </form>
+</div>
+<?php
+include("templates/footer.php");
+?>
 
 
              

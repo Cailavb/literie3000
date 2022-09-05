@@ -22,13 +22,19 @@ include("templates/header.php");
             <div class="mattres">
             <img src="<?=$mattres["picture"] ?>" alt="">
                 <h2>
-                  <a href="recipe.php?id=<?= $mattres["id"]?>">  <?=$mattres["name"]?>
+                  <a href="mattres.php?id=<?= $mattres["id"]?>">  <?=$mattres["name"]?>
                 </h2> 
             </div>
             <?php
         }
         ?>
         
+    </div>
+
+    <div class="buttonToAdd">
+        <button>
+            <a href="add_mattress.php?">Ajouter un matelas</a>
+        </button>
     </div>
     <?php
     include("templates/footer.php")
