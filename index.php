@@ -22,9 +22,22 @@ include("templates/header.php");
             <div class="mattres">
             <img src="<?=$mattres["picture"] ?>" alt="">
                 <h2>
-                  <a href="mattres.php?id=<?= $mattres["id"]?>">  <?=$mattres["name"]?>
-                </h2> 
+                    <?=$mattres["name"]?>
+                </h2>
+
+                <h2>
+                    <?=$mattres["brand"]?>
+                </h2>
+
+                <h2>
+                    <?=$mattres["price"]?>
+                </h2>
+
+                <h2>
+                    <?=$mattres["size"]?>
+                </h2>
             </div>
+
             <?php
         }
         ?>

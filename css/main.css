@@ -10,8 +10,19 @@
     font-size: 1.6rem;
   }
   
-  img {
+  .mattres-picture {
     width: 100%;
+}
+
+@font-face {
+    font-family: "Simple";
+    src: url("../fonts/Simpel-Medium.otf");
+}
+
+body {
+    font-family: "Simple", sans-serif;
+    background-color: #efefef;
+    padding: 2rem;
 }
 
 .logo-wrapper {
@@ -60,4 +71,15 @@
 h1 {
     color: rgb(12, 64, 133);
     text-align: center;
+}
+
+.mattress {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.mattress .mattres {
+    flex-basis: 100%;
 }

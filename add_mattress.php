@@ -56,46 +56,60 @@ include("templates/header.php");
             ?>
         </div>
 
-    <div class="form-group">
-        <label for="">Photo du matelas : </label>
-        <input type="text" name="picture" id="inputPicture" value="<?= isset($picture) ? $picture : "" ?>">
-        <?php
-        if (isset($errors["picture"])) {
-        ?>
-            <span class="info-error"><?= $errors["picture"] ?>
-            </span>
-        <?php
-        }
-        ?>
-    </div>
-
-    <div class="form-group">
-    <label for="selectSize">Choisissez une dimension : </label>
-    <select name="difficulty" id="selectSize">
-        <option value="90x190"<?= (isset($size)&& $size === "90x190") ? "selected": ""?>>90x190</option>
-        <option value="140x190" <?= (isset($size)&& $size === "140x190") ? "selected": ""?>>140x190</option>
-        <option value="160x200"<?= (isset($size)&& $size === "160x200") ? "selected": ""?>>160x200</option>
-        <option value="180x200"<?= (isset($size)&& $size === "180x200") ? "selected": ""?>>180x200</option>
-        <option value="200x200"<?= (isset($size)&& $size === "200x200") ? "selected": ""?>>200x200</option>
-    </select>
-    </div>
-
-    <div class="container">
-        <form action="" method=post>
-            <div class="form-group">
-                <label for="inputPrice">Prix du matelas :</label>
-                <input type="text" name="price" id="inputPrice" value="<?= isset($price) ? $price : "" ?>">
-                <?php
-                if (isset($errors["price"])) {
+        <div class="form-group">
+            <label for="inputBrand">Marque du matelas: </label>
+            <input type="text" name="name" id="inputBrand" value="<?= isset($name) ? $brand: "" ?>">
+            <?php
+            if (isset($errors["brand"])){
                 ?>
-                    <span class="info-error"><?= $errors["price"] ?>
-                    </span>
-                <?php
-                }
-                ?>
-            </div>
-            <input type="submit" value="Ajouter le matelas" class="btn-literie3000">
-</form>
+                <span class="info-error"><?= $errors["name"] ?>
+                </span>
+            <?php    
+            }
+            ?>
+
+        </div>
+
+        <div class="form-group">
+            <label for="">Photo du matelas : </label>
+            <input type="text" name="picture" id="inputPicture" value="<?= isset($picture) ? $picture : "" ?>">
+            <?php
+            if (isset($errors["picture"])) {
+            ?>
+                <span class="info-error"><?= $errors["picture"] ?>
+                </span>
+            <?php
+            }
+            ?>
+        </div>
+
+        <div class="form-group">
+        <label for="selectSize">Choisissez une dimension : </label>
+        <select name="difficulty" id="selectSize">
+            <option value="90x190"<?= (isset($size)&& $size === "90x190") ? "selected": ""?>>90x190</option>
+            <option value="140x190" <?= (isset($size)&& $size === "140x190") ? "selected": ""?>>140x190</option>
+            <option value="160x200"<?= (isset($size)&& $size === "160x200") ? "selected": ""?>>160x200</option>
+            <option value="180x200"<?= (isset($size)&& $size === "180x200") ? "selected": ""?>>180x200</option>
+            <option value="200x200"<?= (isset($size)&& $size === "200x200") ? "selected": ""?>>200x200</option>
+        </select>
+        </div>
+
+        <div class="container">
+            <form action="" method=post>
+                <div class="form-group">
+                    <label for="inputPrice">Prix du matelas :</label>
+                    <input type="text" name="price" id="inputPrice" value="<?= isset($price) ? $price : "" ?>">
+                    <?php
+                    if (isset($errors["price"])) {
+                    ?>
+                        <span class="info-error"><?= $errors["price"] ?>
+                        </span>
+                    <?php
+                    }
+                    ?>
+                </div>
+                <input type="submit" value="Ajouter le matelas" class="btn-literie3000">
+    </form>
 </div>
 <?php
 include("templates/footer.php");
